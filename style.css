@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{	
+	--color-rojo: red;
+}
+body::-webkit-scrollbar{
+    background-color: blanco;
+}	
+html{
+	scroll-behavior: smooth;			
+}			
+body::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 30px;
+}
+header{
+    background-color: #9ECEFA;
+}
+
+h2{
+    color: var(--color-rojo);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+    letter-spacing: 5px;
+    margin-left: 20px;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    color: #414141;
+    font-size: 15px;
+    line-height: 30px
+}
+.container{
+    width: 1140px;
+    margin: auto;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.items a{
+   margin-left: 30px;
+   color: #7b8792;
+   text-decoration: none;
+   font-size: 20px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 800;
+}
+
+.items a:hover{
+    color: #87119a;
+    text-decoration: underline;
+}
+.imagenes1{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.imagenes1 img{
+    border: 2px solid black;
+    border-radius: 30px 0 30px 0;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 20px;
+}
+.imagenes1 img:hover{
+    transform: scale(1.10);
+}
+.Linea{
+    border-left: 5px solid #87119a;
+}
+.imaganes2{
+    width: 850px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contenido2{
+    margin: auto;
+}
+.imaganes2 img{
+    margin: 25px;
+    border-radius: 30px;
+    border: 5px solid black;
+}
+.imagenes3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.imagenes3 img{
+    border: 2px solid black;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.imagenes1 img:first-child{
+
+}
+.imagenes1 img:last-child{
+
+}
+.imagenes1 img:nth-child(2){
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+    }
+    .items a{
+        margin-top: 10px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .Linea{
+        border-left: 0;
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    p{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: justify;
+    }
+    .imagenes1{
+        justify-content: center;
+    }
+    .imaganes2 div{
+        width: 100%;
+    }
+    .imaganes2{
+        flex-direction: column;
+    }
+    .imagenes3{
+        justify-content: center;
+    }
+}
